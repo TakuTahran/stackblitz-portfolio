@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Adamina&family=Barlow+Semi+Condensed:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <div class="content">
+        <h1>
+          Tahran Chowdhury / Digital Designer / Montreal, Canada / +10 Years
+          Experience / Designer @Valnet
+        </h1>
+        <hr / style="margin-bottom:2rem;">
+        <div class="showcase">
+          <a href="gms.html">
+            <div class="item">
+              <img src="imgs/image-1.png" />
+              <div class="info">
+                <h3>UX/UI / Development</h3>
+                <h3>Match Detail Pages</h3>
+              </div>
+            </div>
+          </a>
+          <a href="matteralpha.html">
+            <div class="item">
+              <img src="imgs/image-2.png" />
+              <div class="info">
+                <h3>UX/UI / Branding</h3>
+                <h3>Match Detail Pages</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <hr />
+        <div class="about">
+          <h2>About</h2>
+          <div class="item">
+            <img class="about-image" src="imgs/taku.png" />
+          </div>
+          <div class="item">
+            <h2>Who am I?</h2>
+            <p>
+              I’m Taku, a UX/UI Designer and Front-End Developer based in Canada
+              with 10 years of experience. I specialize in helping businesses
+              build innovative digital products, guiding the process from UX
+              research and UI design to prototyping and integration.
+            </p>
+            <h2>Design Philosophy</h2>
+            <p>These are a set of principles that I adhere by as a Desginer</p>
+            <div class="philosophy">
+              <h3>Be wrong</h3>
+              <p>
+                It took me a long time to learn this, but as a designer, my
+                first iteration should be wrong. I should be open to feedback
+                and criticism to find the best solution.
+              </p>
+              <h3>Understand the process</h3>
+              <p>
+                Good design is not just beautiful but also functional. I always
+                try to understand what is the purpose of my design, who is this
+                for, and what problems does this solve.
+              </p>
+              <h3>Keep it stupid simple</h3>
+              <p>
+                Anyone who’s worked in sales will be familiar with this phrase.
+                It is also applicable to design. It’s important to make sure the
+                work I do add’s value, not complexity.
+              </p>
+              <h3>Have fun</h3>
+              <p>
+                I know this sounds extremely corny, but it’s easy to forget to
+                have fun. After dozen’s of iterations the task may start to feel
+                heavy. I try to take each piece off feedback as a challenge to
+                do something better.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      fetch('header.html')
+        .then((response) => response.text())
+        .then((data) => (document.getElementById('header').innerHTML = data));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Adamina&family=Barlow+Semi+Condensed:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <div class="content">
+        <img src="imgs/image-1.png" />
+        <h3>UX/UI / Development</h3>
+        <h2>Match Detail Pages</h2>
+        <p>
+          GiveMeSport.com is a leading sports news website aiming to increase
+          user engagement. This case study explores the development and impact
+          of a new live match day reporting feature with key statistics.
+        </p>
+        <h3>Problem</h3>
+        <p>
+          While GiveMeSport.com offers a variety of sports content, user
+          engagement suffers during non-live events. Traditional post-match
+          reports lack the immediacy and excitement of live games.
+        </p>
+        <h3>Solution</h3>
+        <p>
+          Develop a live match day reporting feature that provides real-time
+          updates, commentary, and key statistics for major sporting events.
+          This feature integrates with existing functionalities like news
+          articles and social media feeds to create a comprehensive user
+          experience.
+        </p>
+
+        <h3>Key Stats:</h3>
+        <ul>
+          <li>Possession percentage</li>
+          <li>Shots on target</li>
+          <li>Fouls committed</li>
+          <li>Player ratings</li>
+          <li>Key moments with timestamps (e.g., goals, yellow cards)</li>
+        </ul>
+
+        <h3>Implementation:</h3>
+
+        <ul>
+          <li>
+            Partner with a sports data provider to access real-time statistics.
+          </li>
+          <li>
+            Design a user-friendly interface that displays key stats alongside
+            live commentary and updates.
+          </li>
+          <li>
+            Integrate the feature with existing match pages and relevant news
+            articles.
+          </li>
+          <li>
+            Develop mobile-friendly and desktop versions for seamless user
+            experience.
+          </li>
+          <li>
+            Utilize push notifications to alert users about key moments and
+            breaking news.
+          </li>
+        </ul>
+
+        <h3>Results:</h3>
+
+        <ul>
+          <li>Increased user engagement during live matches</li>
+          <li>Higher time spent on the platform</li>
+          <li>Improved user satisfaction with real-time information access</li>
+          <li>
+            Boosted social media interaction through the sharing of key stats
+            and commentary
+          </li>
+          <li>
+            Potential for monetization through targeted advertising during live
+            events
+          </li>
+        </ul>
+
+        <h3>Metrics:</h3>
+
+        <ul>
+          <li>
+            User sessions during live matches compared to pre-implementation
+          </li>
+          <li>Average time spent on match pages</li>
+          <li>Social media shares and engagement with live match content</li>
+          <li>
+            Click-through rates on advertisements displayed within the live
+            reporting feature
+          </li>
+        </ul>
+        <h3>Conclusion:</h3>
+        <p>
+          This case study demonstrates the effectiveness of live match day
+          reporting with key stats in increasing user engagement on a sports
+          news website. By providing real-time updates and relevant data, the
+          feature delivers a more immersive and exciting user experience,
+          fostering a sense of community among sports fans. The success of this
+          feature can be measured by analyzing user behavior and engagement
+          metrics. We have average session duration of 4min 27sec of match
+          pages. Average session duration on other pages is 2min 4sec.
+        </p>
+      </div>
+    </main>
+  </body>
+  <script>
+    fetch('header.html')
+      .then((response) => response.text())
+      .then((data) => (document.getElementById('header').innerHTML = data));
+  </script>
+</html>

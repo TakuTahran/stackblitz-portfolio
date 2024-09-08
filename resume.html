@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Adamina&family=Barlow+Semi+Condensed:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <div class="content">
+        <h1>Resume</h1>
+        <div class="resume">
+          <hr />
+          <h2>Tahran Chowdhury</h2>
+          <p>Brossard, QC / tahran.chowdhury@gmail.com / +1 514 829 9488</p>
+          <h3>Summary</h3>
+          <p>
+            Dedicated and results-driven UX/UI Designer with over 5 years of
+            experience specialising in creating intuitive and empathetic digital
+            interfaces. Proficient in front-end development and web design, with
+            a keen ability to translate user insights into compelling design
+            solutions. Demonstrated track record of successfully leading the
+            migration of multi-million dollar acquisitions to proprietary CMS
+            platforms, identifying key gaps, and implementing innovative
+            solutions to elevate user experiences. Skilled in fostering
+            collaboration across cross functional teams, including project
+            managers, developers, and stakeholders, to deliver impactful
+            features. Capable of crafting mockups that precisely meet user needs
+            and implementing enhancements for seamless user interactions.
+            Enthusiastic about applying design thinking methodologies to fuel
+            product innovation and crafting engaging experiences that exceed
+            user expectations.
+          </p>
+          <div class="job">
+            <h2>Work History</h2>
+            <h3>Company : Valnet</h3>
+            <h4>Position : Lead Designer - Reporting and Ads Platform</h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      fetch('header.html')
+        .then((response) => response.text())
+        .then((data) => (document.getElementById('header').innerHTML = data));
+    </script>
+  </body>
+</html>

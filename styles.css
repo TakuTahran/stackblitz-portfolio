@@ -1,0 +1,116 @@
+/* Gen styles */
+ {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: white;
+  background-color: #282828;
+  font-size: 16px;
+}
+span.logo,
+h1,
+h2,
+h3 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p,
+li {
+  font-family: 'Adamina', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.7em;
+}
+
+/* nav styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+span.logo {
+  font-size: 1.125rem;
+}
+.nav-items a {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+}
+
+/* Pages */
+.content {
+  max-width: 633px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.showcase {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.showcase .item {
+  flex: 1;
+  display: grid;
+  grid-template-areas: 'area';
+  align-items: end;
+  position: relative;
+}
+.showcase .item:before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgb(40 40 40 / 70%);
+  position: absolute;
+  z-index: 1;
+}
+.showcase .item img {
+  max-width: 100%;
+  grid-area: area;
+}
+.showcase .item .info {
+  grid-area: area;
+  padding: 0.4rem;
+  z-index: 2;
+}
+.showcase .item h3 {
+  margin: 0;
+  color: white;
+  text-decoration: none;
+}
+
+.philosophy {
+  padding: 0 2rem;
+}
+.about-image {
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #5e5e5e;
+  padding: 8px;
+  vertical-align: baseline;
+}
+th,
+td,
+th p,
+td p,
+td li {
+  font-size: 0.825rem;
+  text-align: left;
+}

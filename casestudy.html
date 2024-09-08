@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Adamina&family=Barlow+Semi+Condensed:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <div class="content">
+        <h1>
+         Case Studies
+        </h1>
+        <div class="showcase">
+          <a href="gms.html">
+            <div class="item">
+              <img src="imgs/image-1.png" />
+              <div class="info">
+                <h3>UX/UI / Development</h3>
+                <h3>Match Detail Pages</h3>
+              </div>
+            </div>
+          </a>
+          <a href="matteralpha.html">
+            <div class="item">
+              <img src="imgs/image-2.png" />
+              <div class="info">
+                <h3>UX/UI / Branding</h3>
+                <h3>Match Detail Pages</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      fetch('header.html')
+        .then((response) => response.text())
+        .then((data) => (document.getElementById('header').innerHTML = data));
+    </script>
+  </body>
+</html>
